@@ -214,18 +214,37 @@ header > a > h1 {
 }
 .redial{
     position: relative;
+    width:328px;
+    height:328px;
+    background: url(../image/icon_and_vector/wheel.png) no-repeat;
+    background-position: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 .redial > ol > li{
     position: absolute;
     font-size: 5rem;
     font-weight: 700;
     line-height: 1em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     color:#E7C76E;
     display: none;
 }
 .redial > ol > li[class~="on"]{
     display: block;
 }
+.seasonApple {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: 700;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+.seasonApple[class~="on"]
 #calender > ul {
     position: relative;
     width: 100%;
@@ -238,7 +257,10 @@ header > a > h1 {
     color: #f0f0f0;
     font-size: 2rem;
     display: none;
-
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    white-space:nowrap;
 }
 #calender > ul > li[class~="on"]{
     display: block;
