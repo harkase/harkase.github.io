@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>공정 안내 | 뚝딱뚝딱 철공소</title>
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="css/commonStyle.css">
+        <link rel="stylesheet" href="css/listSubPageStyle.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="js/commonScript.js"></script>
+        <script src="js/listSubPageScript.js"></script>
+    </head>
+    <body>
+        <div id="overlay" class="hidden">
+            <div>
+                <div id="overlayMenu">
+                    <div>
+                        <p>소개</p>
+                        <ul>
+                            <li>
+                                <a href="index.html">철공소 소개</a>
+                                <a href="index.html">오시는 길</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>안내</p>
+                        <ul>
+                            <li>
+                                <a href="process.html">공정 안내</a>
+                                <a href="product.html">제품 안내</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="process.html">견적 신청</a>
+                    </div>
+                    <div>
+                        <p>커뮤니티</p>
+                        <ul>
+                            <li>
+                                <a href="process.html">의뢰 내역</a>
+                                <a href="process.html">문의 사항</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="address">
+                    <dl>
+                        <dt>전화번호</dt>
+                        <dd>1899-1680</dd>
+                    </dl>
+                    <dl>
+                        <dt>이메일</dt>
+                        <dd>cdy9491&#64;naver&#46;com</dd>
+                    </dl>
+                    <dl>
+                        <dt>예금주</dt>
+                        <dd>&#40;주&#41;한길산업</dd>
+                    </dl>
+                    <dl>
+                        <dt>계좌번호</dt>
+                        <dd>&#91;기업은행&#93; 464-061877-01-010</dd>
+                    </dl>
+                    <dl>
+                        <dt>주소</dt>
+                        <dd>경기도 시흥시 공단1대로 367</dd>
+                        <dd>&#40;주&#41; 한길산업</dd>
+                    </dl>
+                </div>
+                <button class="icon50px" id="close"><span>close overlay</span></button>
+            </div>
+        </div>
+        <div>
+            <header>
+                <h1>
+                    <a href="index.html">
+                        <img id="logo" src="image/icon/mosaWixzao.png" alt="logo">
+                        <span>뚝딱뚝딱 철공소</span>
+                    </a>
+                </h1>
+                <div>
+                    <!-- 일정너비 이하에서는 네비게이션바 숨김-->
+                    <div id="navigationBar">
+                        <div>
+                            <p>소개</p>
+                            <ul>
+                                <li><a href="index.html">철공소 소개</a></li>
+                                <li><a href="index.html">오시는 길</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>안내</p>
+                            <ul>
+                                <li><a href="process.html">공정 안내</a></li>
+                                <li><a href="product.html">제품 안내</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="process.html">견적 신청</a>
+                        </div>
+                        <div>
+                            <p>커뮤니티</p>
+                            <ul>
+                                <li><a href="process.html">의뢰 내역</a></li>
+                                <li><a href="process.html">문의 사항</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="icon50px" id="login"><span>connect to login</span></button>
+                        <button class="icon50px" id="menu"><span>call overlay</span></button>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <!--메인 화면-->
+                <div id="mainview">
+                    <h2>공정안내</h2>
+                    <div id="subback">
+                        <div id="processBack">Subpage Background</div>
+                    </div>
+                </div>
+                <section>
+                    <div id="wrap">
+                        <div>
+                            <div>
+                                <div class="slide">
+                                    <ul>
+                                        <li>
+                                            <img src="image/thumbnail/cut1tn.jpg" alt="cuttingMachine">
+                                        </li>
+                                        <li>
+                                            <img src="image/thumbnail/cut2tn.jpg" alt="squareMetalSheet">
+                                        </li>
+                                        <li>
+                                            <img src="image/thumbnail/cut3tn.jpg" alt="octagonMetalSheet">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="description">
+                                    <h3>
+                                        절단
+                                        <span>Cutting, Shearing</span>
+                                    </h3>
+                                    <p>컷팅머신(샤링기)을 이용하여 철판을 사각, 삼각, 육각,원형 등 다양한 형태로 가공합니다.
+                                        <br>기기 특성상 곡선은 가공이 어려우며 직선위주의 작업과 원형작업이 가능합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="slide">
+                                    <ul>
+                                        <li>
+                                            <img src="image/thumbnail/pipe1tn.jpg" alt="squarePipeCut">
+                                        </li>
+                                        <li>
+                                            <img src="image/thumbnail/pipe2tn.jpg" alt="steelPipe">
+                                        </li>
+                                        <li>
+                                            <img src="image/thumbnail/pipe3tn.jpg" alt="thinPipeCut">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="description">
+                                    <h3>
+                                        파이프 절단
+                                        <span>Pipe Cutting</span>
+                                    </h3>
+                                    <p>원형, 사각 형태의 파이프 각재를 재단하여 절단합니다. 
+                                        <br>용도에 맞춰 다양한 길이와 각도로 컷팅하여 사용됩니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="slide">
+                                    <ul>
+                                        <li>
+                                            <img src="image/thumbnail/drill1tn.jpg" alt="drillBit">
+                                        </li>
+                                        <li>
+                                            <img src="image/thumbnail/drill2tn.jpg" alt="drillingProcess">
+                                        </li>
+                                        <li>
+                                            <img src="image/thumbnail/drill3tn.jpg" alt="drillHole">
+                                        </li>
+                                        <li>
+                                            <img src="image/thumbnail/drill4tn.jpg" alt="screwThread">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="description">
+                                    <h3>
+                                        타공
+                                        <span>Drilling, Tapping</span>
+                                    </h3>
+                                    <p>철판이나 파이프 등 재료에 구멍을 뚫는 작업입니다. 
+                                        <br>제품용도에 따라 0.1mm 단위로 구멍을 뚫을 수 있으며 완전타공, 부분타공, 볼트머리가 들어갈 수 있도록 2중 타공 등 다양한 작업이 가능하고 필요에 따라 볼트가 체결될 수 있도록 나사산을 만들어주는 탭핑작업도 가능합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="slide">
+                                    <ul>
+                                        <li>
+                                            <img src="image/thumbnail/mill1tn.jpg" alt="millingCutter">
+                                        </li>
+                                        <li>
+                                            <img src="image/thumbnail/mill2tn.jpg" alt="millingDrill">
+                                        </li>
+                                        <li>
+                                            <img src="image/thumbnail/mill3th.jpg" alt="Drilling">
+                                        </li>
+                                        <li>
+                                            <img src="image/thumbnail/mill4tn.jpg" alt="millingProcess">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="description">
+                                    <h3>
+                                        사상 및 가공
+                                        <span>Milling</span>
+                                    </h3>
+                                    <p>두꺼운 철재를 깎아 형상을 만드는 작업입니다.
+                                        <br>구멍을 뚫거나 모양을 파내는 등 다양한 작업이 가능하나 가공에 시간이 들어 제품생산보다는 금형과 같은 틀을 제작하는 용도에 적합합니다. 
+                                        <br>NCT의 경우 제품생산도 가능하지만 작업효율이 나빠 샘플과 같은 소량의 대형제품을 만들기에 적합합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="slide">
+                                    <ul>
+                                        <li>
+                                            <img src="image/thumbnail/band1tn.jpg" alt="uShapeBand">
+                                        </li>
+                                        <li>
+                                            <img src="image/thumbnail/band2tn.jpg" alt="boxBanding">
+                                        </li>
+                                        <li>
+                                            <img src="image/thumbnail/band3tn.jpg" alt="complexBand">
+                                        </li>
+                                        <li>
+                                            <img src="image/thumbnail/band4tn.jpg" alt="bandingMachine">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="description">
+                                    <h3>
+                                        절곡
+                                        <span>Banding</span>
+                                    </h3>
+                                    <p>절곡기를 이용하여 제품에 맞게 치수와 각도를 검토하여 ㄱ, ㄷ, ㄹ등 다양한 형태로 절곡 할 수 있습니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="slide">
+                                    <ul>
+                                        <li>
+                                            <img src="image/thumbnail/press1tn.jpg" alt="pressMachine">
+                                        </li>
+                                        <li>
+                                            <img src="image/thumbnail/press2tn.jpg" alt="pressProcess">
+                                        </li>
+                                        <li>
+                                            <img src="image/thumbnail/press3tn.jpg" alt="pressedSheet">
+                                        </li>
+                                        <li>
+                                            <img src="image/thumbnail/press4tn.jpg" alt="complexPress">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="description">
+                                    <h3>
+                                        프레스 가공
+                                        <span>Stamping, Pressing</span>
+                                    </h3>
+                                    <p>절단, 타공, 절곡 등의 작업으로 불가능한 다양한 작업을 할 수 있습니다.
+                                        <br>작업시간이 빠르고 금형 형태에 따라 다양한 작업을 할 수 있는 장점이 있지만 금형제작에 비용과 시간이 많이 들어 대량생산제품에 적합합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="slide">
+                                    <ul>
+                                        <li>
+                                            <img src="image/thumbnail/lathe1tn.jpg" alt="lathe">
+                                        </li>
+                                        <li>
+                                            <img src="image/thumbnail/lathe2tn.jpg" alt="latheMadeProduct">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="description">
+                                    <h3>
+                                        선반 가공
+                                        <span>Lathe Processing</span>
+                                    </h3>
+                                    <p>원형 형태의 층을 만들거나 동그란 머리 부분을 다듬거나 동그란 원형핀을 만드는 등 원형제품의 가공에 적합합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="slide">
+                                    <ul>
+                                        <li>
+                                            <img src="image/thumbnail/weld1tn.jpg" alt="weldingProcess1">
+                                        </li>
+                                        <li>
+                                            <img src="image/thumbnail/weld2tn.jpg" alt="weldingProcess2">
+                                        </li>
+                                        <li>
+                                            <img src="image/thumbnail/weld3tn.jpg" alt="weldedProduct">
+                                        </li>
+                                        <li>
+                                            <img src="image/thumbnail/weld4tn.jpg" alt="weld">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="description">
+                                    <h3>
+                                        용접
+                                        <span>Welding</span>
+                                    </h3>
+                                    <p>용접은 두 제품을 하나로 이어 붙이는 작업으로 자동차, 선박, 전자제품 등 거의 모든 금속 완제품에 없어서는 안 될 필수 공정 중 하나입니다.
+                                        <br>뚝딱뚝딱 철공소에서는 LCD지지대의 조립, 테이블의 상판과 다리의 조립 등 다양한 제품들의 조립에 용접작업을 하고 있으며 아크용접, CO2 용접, 스포트 용접, 알곤용접을 주로 하고 있습니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="slide">
+                                    <ul>
+                                        <li>
+                                            <img src="image/thumbnail/post1tn.jpg" alt="sandding">
+                                        </li>
+                                        <li>
+                                            <img src="image/thumbnail/post2tn.jpg" alt="polishedProduct">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="description">
+                                    <h3>
+                                        후처리
+                                        <span>Post Process</span>
+                                    </h3>
+                                    <p>용접이나 타공등의 작업 후 거칠어지고 손상된 부분을 다듬어주거나 광을 내주는 작업으로 완성도 있는 제품을 위한 거의 마지막 단계입니다.
+                                        <br>필요한 경우 도장이나 도금 등의 가공도 가능하며 뚝딱뚝딱 철공소의 모든 생산품은 검은색, 은색, 흰색의 도장을 취급하며 조도가 필요 없는 도장의 경우 다른 색상도 가능하지만 작업시간이 오래 걸릴 수 있습니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="slide">
+                                    <ul>
+                                        <li>
+                                            <img src="image/thumbnail/laser1tn.jpg" alt="laserCutProduct">
+                                        </li>
+                                        <li>
+                                            <img src="image/thumbnail/laser2tn.jpg" alt="laserCarving">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="description">
+                                    <h3>
+                                        레이저 가공
+                                        <span>Laser Ablation</span>
+                                    </h3>
+                                    <p>레이저가공은 글자나 각종 제품 등 곡선과 직선이 섞인 제품의 소량 가공에 적합합니다.
+                                        <br>작업시간과 비용이 많이 들긴 하지만 정교한 결과물을 얻을 수 있고 소량가공이 가능하여 금형제작에 투자를 할 수 없는 경우 적합합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--효과가 구현될시 viewport상의 위치-->
+                <!--컨텐츠 칸 -->
+
+            </main>
+        </div>
+        <footer>
+            <div>
+                <div>
+                    <div>
+                        <dl>
+                            <dt>상호</dt>
+                            <dd>&#40;주&#41;한길산업</dd>
+                        </dl>
+                        <dl>
+                            <dt>대표자</dt>
+                            <dd>김한준</dd>
+                        </dl>
+                        <dl>
+                            <dt>전화번호</dt>
+                            <dd>1899-1680</dd>
+                        </dl>
+                    </div>
+                    <div>
+                        <dl>
+                            <dt>이메일</dt>
+                            <dd>cdy9491&#64;naver&#46;com</dd>
+                        </dl>
+                        <dl>
+                            <dt>사업자 번호</dt>
+                            <dd>883-81-01795</dd>
+                        </dl>
+                    </div>
+                </div>
+                <a id="topArrow" class="icon50px"><span>To The Top</span></a>
+            </div>
+            <div>
+                <p>Copyright &#169; HANGIL. All right reserved</p>
+                <div>
+                    <a href="process.html">개인정보 처리방침</a>
+                    <a href="process.html">이용약관</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

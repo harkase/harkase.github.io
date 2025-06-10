@@ -1,0 +1,320 @@
+body {
+    font-family: 'Noto Sans Korean', '42dot Sans', Verdana, sans-serif;
+}
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+h3 , b {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
+p , li {
+    line-height: 1.5em;
+    font-weight: 400;
+}
+/* 오버레이 */
+#overlay {
+    position: fixed;
+    background-color: #000000b9;
+    top:0; right:0; bottom:0; left:0;
+    z-index: 1;
+}
+#overlay > img {
+    width: 40vw;
+    border: 10px solid #FCFBEE;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+#overlay , #overlay > img {
+    display: none;
+}
+#overlay > button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50px;
+    right: 50px;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    background-image: url("../images/icon/close_white.png");
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer; 
+    z-index: 2; 
+}
+#overlay > button > span {
+    position: absolute;
+    display: block;
+    width: 1px; height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+.hidden {
+    display: none;
+}
+/* 모니터 공통 */
+.monitor {
+    padding-top: 100px;
+    background: url(../images/A_dark_and_gloomy_office_scene.jpg) no-repeat center;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+    position: relative;
+}
+.monitor > div {
+    width: 1138px;
+    padding: 36px;
+    padding-bottom: 180px;
+    box-sizing: border-box;
+    background: url(../images/monitor.png) no-repeat;
+}
+
+.monitor > div > div {
+    background-color: #282828;
+    padding: 48px;
+}
+.chatbox > p {
+    margin: 16px 0px;
+}
+.chatbox > p:first-child {
+    margin: 0px 0px;
+}
+.timedisplay{
+    margin: 12px;
+    font-size: 16px;
+    color: #2ba537;
+    font-weight: thin;
+}
+/* 전열 모니터 */
+#start {
+    display: block;
+    text-align: center;
+    margin: 200px 0;
+}
+/* 슬라이드 화면 */
+#blackboard {
+    position: relative;
+    background-color: #282828;
+    padding: 120px calc(50% - 750px) 0 calc(50% - 750px);
+}
+
+#blackboard > p {
+    top: 2rem;
+    left: 4rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    display: none;
+    opacity: 0;
+}
+#blackboard:hover > p {
+    opacity: 1;
+}
+#blackboard > p > span {
+    font-size: 2rem;
+    animation: blink 1s step-end infinite;
+}
+#blackboard > div::before {
+    content: '';
+    position: sticky;
+    top: 90px;
+    margin: 0 auto;
+    display: block;
+    background: url(../images/paperborder.png);
+    width:100%;
+    height:30px;
+}
+.wrap {
+    position: sticky;
+    top: 120px;
+    margin: 0 auto;
+    background-color: #f0f4ff;
+    color: #222;
+    border: 1px solid #000;
+    padding: 100px calc((100% - 1198px) / 2);
+}
+.wrap > div {
+    padding: 0 12px;
+}
+/* 슬라이드1 */
+#slide1 > div {
+    display: flex;
+}
+#slide1 > div > div:first-of-type {
+    width:35%;
+    padding-bottom: 35px;
+}
+
+#slide1 > div > div:last-child {
+    width: 65%;
+}
+
+#slide1 > div > div:first-of-type > img , #slide1 > div > div:last-child > h3 , 
+#slide1 > div > div:last-child  > div:first-of-type , #slide1 > div > div:last-child > 
+div:last-child > h3 {
+    margin-bottom: 50px;
+}
+#slide1 > div > div:last-child > div:nth-child(2) {
+    display: flex;
+}
+#slide1 > div > div:last-child > div:nth-child(2) > ul{
+    width: 50%;
+}
+.tool-progress > li {
+    margin-bottom: 12px;
+}
+.tool-progress > li > span {
+    margin-left: 1.5rem; 
+    vertical-align: top;
+    line-height: 50px;
+}
+
+.tool-progress > li > img {
+    width: 50px;
+}
+/* 슬라이드2 */
+#slide2 > div > div {
+    margin-bottom: 47px;
+}
+#slide2 > div > ul {
+    display: flex;
+    justify-content:center;
+}
+#slide2 > div > ul > li:first-child , #slide5 > div > ul > li:first-child{
+    margin-right:100px;
+} 
+/*슬라이드3*/
+#slide3 > div > ul {
+    display: flex;
+}
+#slide3 > div > ul > li {
+    width: 50%;
+}
+#slide3 > div > ul > li:first-child {
+    margin-right: 24px;
+}
+#slide3 > div > ul > li > div:first-child {
+    margin-bottom: 71px;
+}
+#slide4 > div > h2 , #slide5 > div > h2{
+    text-align: center;
+    margin-bottom: 150px;
+}
+#slide4 > div > ul , #slide5 > div > ul{
+    display: flex;
+    justify-content:center;
+    padding-bottom: 75px;
+}
+#slide4 > div > ul > li {
+    margin: 0 12px;
+}
+/* 섬네일 관련*/
+#slide3 > div > ul > li > div:last-child , #slide4 > div > ul > li , 
+#slide5 > div > ul > li {
+    position: relative;
+}
+.thumbnail > a , .portfolio > a{
+    display: block;
+}
+.thumbnail > a::after , .portfolio > a::after {
+    content:'';
+    width: 24px;
+    height: 24px;
+    background: url(../images/icon/mag.png) no-repeat center #bde983;
+    border: 0;
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    border-radius: 3px;
+}
+/* 후열 모니터*/
+#click {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: blink 1s step-end infinite;
+}
+#secondplate {
+    height:504px;
+    overflow-y: scroll;
+}
+#secondplate::-webkit-scrollbar {
+    width:16px;
+}
+#secondplate::-webkit-scrollbar-thumb {
+    background: #fcfbee;
+    border-radius: 8px;
+}
+#secondplate::-webkit-scrollbar-track {
+    background: #282828;
+    border: 3px solid #fcfbee;
+    border-radius: 8px;
+}
+/* 모니터 효과 */
+.stand {
+    width: 1138px;
+    box-sizing: border-box;
+    background: url(../images/monitor.png) no-repeat;
+    top: 100px;
+    height: 811px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+#psudoback {
+    color: #909090;
+    background: url(../images/A_dark_and_gloomy_office_scene.jpg) no-repeat center;
+    top:0; right:0; bottom:0; left:0;
+    position: fixed;
+    display: none;
+    z-index: 1;
+}
+#dummy{
+    height: 708px;
+    background: url(../images/monitor2.png) no-repeat;
+    background-color: #282828;
+    z-index: 3;
+}
+/* 푸터 */
+footer{
+    background-color: #282828;
+}
+footer > p{
+    color: #fcfbee;
+    text-align: center;
+    font-size: 14pt;
+    font-weight: 400;
+    line-height: 50pt;
+}
+
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+

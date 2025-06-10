@@ -1,0 +1,80 @@
+
+/* 색상
+주조색: #71797e
+보조색: #E0E5E5
+강조색: #EEFF99
+배경색: #23272c
+글자색: #f0f0f0
+
+*/
+/* 컨텐츠 */
+main {
+    background-color: #23272c;
+    padding-bottom: 100px;
+}
+#mainview {
+    padding-top: 90px;
+    margin-bottom: 100px;
+}
+#mainview > * {
+    margin-top: 100px;
+}
+#mainview > h2 {
+    margin-left: 12.2vw;
+}
+#subback {
+    position: relative;
+    height:900px;
+}
+                                                            
+#subback > div {
+    position: sticky;
+    background-attachment: fixed;
+    top: 0;
+    width:100%;
+    height: 600px;
+    color: #00000000;
+}
+#processBack {
+    background: url(../image/processSubImg.jpg) no-repeat;
+}
+#productBack {
+    background: url(../image/productSubImg.jpg) no-repeat;
+}
+#wrap {
+    margin:0 5.75%;
+}
+#wrap > div::before {
+    display: inline-block;
+    content: "";
+    width:100%;
+    height: 1px;
+    border-top: #71797e 1px solid;
+    margin-bottom: 49px;
+}
+#wrap > div > div {
+    background-color: #71797e;
+    display: flex;
+    margin-bottom: 50px;
+}
+.slide {
+    flex-shrink: 0;
+    width:440px;
+    height:330px;
+    overflow: hidden;
+}
+.slide > ul {
+    display: flex;
+}
+.description {
+    margin: 50px 100px 0px 100px;
+}
+.description > h3 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+    color: #EEFF99;
+}
+.description > h3 > span {
+    margin-left: 50px;
+    color: #E0E5E5;
+}

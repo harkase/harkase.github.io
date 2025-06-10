@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>공정 안내 | 뚝딱뚝딱 철공소</title>
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="css/commonStyle.css">
+        <link rel="stylesheet" href="css/listSubPageStyle.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="js/commonScript.js"></script>
+        <script src="js/listSubPageScript.js"></script>
+    </head>
+    <body>
+        <div id="overlay" class="hidden">
+            <div>
+                <div id="overlayMenu">
+                    <div>
+                        <p>소개</p>
+                        <ul>
+                            <li>
+                                <a href="index.html">철공소 소개</a>
+                                <a href="index.html">오시는 길</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>안내</p>
+                        <ul>
+                            <li>
+                                <a href="process.html">공정 안내</a>
+                                <a href="product.html">제품 안내</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="process.html">견적 신청</a>
+                    </div>
+                    <div>
+                        <p>커뮤니티</p>
+                        <ul>
+                            <li>
+                                <a href="process.html">의뢰 내역</a>
+                                <a href="process.html">문의 사항</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="address">
+                    <dl>
+                        <dt>전화번호</dt>
+                        <dd>1899-1680</dd>
+                    </dl>
+                    <dl>
+                        <dt>이메일</dt>
+                        <dd>cdy9491&#64;naver&#46;com</dd>
+                    </dl>
+                    <dl>
+                        <dt>예금주</dt>
+                        <dd>&#40;주&#41;한길산업</dd>
+                    </dl>
+                    <dl>
+                        <dt>계좌번호</dt>
+                        <dd>&#91;기업은행&#93; 464-061877-01-010</dd>
+                    </dl>
+                    <dl>
+                        <dt>주소</dt>
+                        <dd>경기도 시흥시 공단1대로 367</dd>
+                        <dd>&#40;주&#41; 한길산업</dd>
+                    </dl>
+                </div>
+                <button class="icon50px" id="close"><span>close overlay</span></button>
+            </div>
+        </div>
+        <div>
+            <header>
+                <h1>
+                    <a href="index.html">
+                        <img id="logo" src="image/icon/mosaWixzao.png" alt="logo">
+                        <span>뚝딱뚝딱 철공소</span>
+                    </a>
+                </h1>
+                <div>
+                    <!-- 일정너비 이하에서는 네비게이션바 숨김-->
+                    <div id="navigationBar">
+                        <div>
+                            <p>소개</p>
+                            <ul>
+                                <li><a href="index.html">철공소 소개</a></li>
+                                <li><a href="index.html">오시는 길</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>안내</p>
+                            <ul>
+                                <li><a href="process.html">공정 안내</a></li>
+                                <li><a href="product.html">제품 안내</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="process.html">견적 신청</a>
+                        </div>
+                        <div>
+                            <p>커뮤니티</p>
+                            <ul>
+                                <li><a href="process.html">의뢰 내역</a></li>
+                                <li><a href="process.html">문의 사항</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="icon50px" id="login"><span>connect to login</span></button>
+                        <button class="icon50px" id="menu"><span>call overlay</span></button>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <!--메인 화면-->
+                <div id="mainview">
+                    <h2>제품 안내</h2>
+                    <div id="subback">
+                        <div id="productBack">Subpage Background</div>
+                    </div>
+                </div>
+                <section>
+                    <div id="wrap">
+                        <div class="isNotSlide">
+                            <div>
+                                <div class="slide">
+                                    <ul>
+                                        <li>
+                                            <img src="image/thumbnail/cut2tn.jpg" alt="squareSteelPlate">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="description">
+                                    <h3>사각형 철판</h3>
+                                    <p>철판을 고객의 요구치수에 따라 잘라서 가공한 제품으로 두 번의 절단공정이 필요합니다.
+                                        <br>고객의 요구시 도장 및 추가공정 가능.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="isNotSlide">
+                            <div>
+                                <div class="slide">
+                                    <ul>
+                                        <li>
+                                            <img src="image/thumbnail/lathe2tn.jpg" alt="pipeExtender">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="description">
+                                    <h3>파이프 연결 고정대</h3>
+                                    <p>원형 파이프 두 개를 연결하여 고정시키는 중간 부속품으로 절단,타공,선반가공의 공정이 필요하며 마무리로 도장작업 후 출고합니다. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="isNotSlide">
+                            <div>
+                                <div class="slide">
+                                    <ul>
+                                        <li>
+                                            <img src="image/thumbnail/pipeMountTn.jpg" alt="pipeMount">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="description">
+                                    <h3>파이프 고정대</h3>
+                                    <p>벽면이나 바닥면에 파이프 제품을 고정시키는 용도에 사용되는 제품으로 파이프+고정판의 구조입니다.  
+                                        <br>파이프와 고정판 모두 필요한 치수에 따라 변경하여 생산 가능하며 절단,프레스가공,타공,용접의 가공 후 도장하여 출고됩니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="isNotSlide">
+                            <div>
+                                <div class="slide">
+                                    <ul>
+                                        <li>
+                                            <img src="image/thumbnail/stimmerTn.jpg" alt="stimmerBottomPlate">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="description">
+                                    <h3>찜통 바닥</h3>
+                                    <p>찜통에 들어가는 바닥면으로 동그랗게 절단한 철판에 프레스가공,조립의 공정이 들어간 제품입니다. 
+                                        <br>비슷한 형태의 제품 어떤것이든 사이즈에 따라 제작가능하며 고무지지대 대신 바퀴부착도 가능합니다. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="slide">
+                                    <ul>
+                                        <li>
+                                            <img src="image/thumbnail/lcdStandTn1.jpg" alt="lcdStand3d">
+                                        </li>
+                                        <li>
+                                            <img src="image/thumbnail/lcdStandTn2.jpg" alt="lcdStandPole">
+                                        </li>
+                                        <li>
+                                            <img src="image/thumbnail/weld3tn.jpg" alt="lcdStandSupport">
+                                        </li>
+                                        <li>
+                                            <img src="image/thumbnail/lcdStandTn4.jpg" alt="lcdStandNeckAndSupport">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="description">
+                                    <h3>LCD 거치대</h3>
+                                    <p>거래처에 납품하는 제품으로 여러가지 형태의 LCD 거치대를 제작하고 있습니다.
+                                        <br>해당 제품의 생산을 위해 절단,타공,프레스 가공,선반가공,절곡,용접,도장,조립의 공정이 필요합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--효과가 구현될시 viewport상의 위치-->
+                <!--컨텐츠 칸 -->
+
+            </main>
+        </div>
+        <footer>
+            <div>
+                <div>
+                    <div>
+                        <dl>
+                            <dt>상호</dt>
+                            <dd>&#40;주&#41;한길산업</dd>
+                        </dl>
+                        <dl>
+                            <dt>대표자</dt>
+                            <dd>김한준</dd>
+                        </dl>
+                        <dl>
+                            <dt>전화번호</dt>
+                            <dd>1899-1680</dd>
+                        </dl>
+                    </div>
+                    <div>
+                        <dl>
+                            <dt>이메일</dt>
+                            <dd>cdy9491&#64;naver&#46;com</dd>
+                        </dl>
+                        <dl>
+                            <dt>사업자 번호</dt>
+                            <dd>883-81-01795</dd>
+                        </dl>
+                    </div>
+                </div>
+                <a id="topArrow" class="icon50px"><span>To The Top</span></a>
+            </div>
+            <div>
+                <p>Copyright &#169; HANGIL. All right reserved</p>
+                <div>
+                    <a href="process.html">개인정보 처리방침</a>
+                    <a href="process.html">이용약관</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

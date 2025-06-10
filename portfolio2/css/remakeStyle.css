@@ -1,0 +1,401 @@
+
+/* 색상
+주조색: #A4C639
+보조색: #E7C76E
+강조색: #D32F2F
+배경색: #F0F0F0
+글자색: #222222
+
+*/
+body , .subfont{
+    font-family: 'Noto Serif Korean', '42dot Sans', Georgia, serif;
+    color: #222222;
+}
+.highlight {
+    font-family:'Jua','Do Hyeon' , Impact, monospace;
+}
+p {
+    line-height: 1.5em;
+}
+a {
+    line-height: 1.5em;
+    text-decoration: none;
+    color: inherit;
+}
+h2 {
+    font-size: 2.25rem;
+    color: #A4C639;
+    font-weight: 800;
+}
+.subfont {
+    font-size: 1rem;
+}
+
+/* 헤더*/
+header {
+    font-size: 1.5em;
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    top:calc(100vh - 120px);
+    padding: 0 calc(50% - 600px);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+header[class~='fix']{
+    position: fixed;
+    top: 0;
+}
+#navigationbar {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+#navigationbar > div {
+    background-color: #f0f0f0;
+    padding-left: 30px;
+    color: #D32F2F;
+    position: relative;
+}
+#navigationbar > div:first-of-type {
+    border-radius: 20px 0 0 20px;
+}
+#navigationbar > div:last-of-type {
+    padding-right: 30px;
+    border-radius: 0 20px 20px 0;
+}
+#navigationbar > div > ul {
+    width: 100px;
+    display: none;
+    background-color: #f0f0f0;
+    padding: 0 10px;
+}
+#navigationbar > div:hover > ul {
+    display: block;
+    position: absolute;
+}
+/* 일정 거리에서 js로 이동될 타이틀 로고 위치
+ * 나중에 비활성화 및 숨김처리 할 것
+ */
+header > a {
+    display: block;
+    margin: 10px 0;
+    display: flex;
+    text-shadow: -1px 0 #f0f0f0, 0 1px #f0f0f0, 1px 0 #f0f0f0, 0 -1px #f0f0f0;
+    align-items: center;
+    gap:5px;
+}
+header > a > img {
+    height: 100px;
+}
+header > a > h1 {
+    width: 2em;
+    line-height: 1.2em;
+    -webkit-line-clamp: 3;
+}
+/* 기타 기능 클래스 */
+.icon50px {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    display: block;
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer; 
+}
+.blind {
+    position: absolute;
+    display: block;
+    width: 1px; height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+.flex {
+    display: flex;
+    gap: 24px;
+}
+/* 메인 타이틀 로고*/
+#mainlogo {
+    position: absolute;
+    top:150px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 7rem;
+    text-shadow: -3px 0 #f0f0f0, 0 3px #f0f0f0, 3px 0 #f0f0f0, 0 -3px #f0f0f0;
+}
+#mainlogo > a {
+    display: block;
+}
+/* 메인 타이틀 배경*/
+#mainbg{
+    background-image: url(../image/20210901_102112-resize.jpg);
+    width:100%;
+    height: 100vh;
+}
+/* 콘텐츠 */
+#content{
+    margin: 150px calc(50% - 600px);
+}
+#content > div {
+    margin-bottom: 100px;
+}
+.subtitle {
+    margin: 0 76px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.titleline {
+    gap:76px;
+}
+.titleline::after {
+    content: "";
+    flex-grow: 1;
+    height: 12px;
+    background-color: #A4C639;
+    border-radius: 6px;
+    align-content:baseline;
+}
+#slide {
+    width: 676px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+#slide > div {
+    display: flex;
+}
+#slide > div > div{
+    position: relative;
+}
+#slide > div > div > img {
+    border-radius: 30px;
+}
+.textbox{
+    position: absolute;
+    text-align: center;
+    padding: 50px;
+    top:0;
+    font-size: 3.5rem;
+    line-height: 1.1em;
+    color: #D32F2F;
+    background-image: radial-gradient(#e7c76e, #00000000);
+}
+#indicator{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+#indicator > li {
+    height: 10px;
+    width: 10px;
+    background-color: #f0f0f0;
+    transition: 1s ease-in-out;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+#indicator > li > span {
+    visibility: hidden;
+}
+#indicator > li[class~="on"] {
+    width: 120px;
+}
+#calender {
+    width: 476px;
+    margin: 50px 0;
+}
+.redial{
+    position: relative;
+}
+.redial > ol > li{
+    position: absolute;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1em;
+    color:#E7C76E;
+    display: none;
+}
+.redial > ol > li[class~="on"]{
+    display: block;
+}
+#calender > ul {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: #A4C639;
+    border-radius: 20px;
+}
+#calender > ul > li {
+    position: absolute;
+    color: #f0f0f0;
+    font-size: 2rem;
+    display: none;
+
+}
+#calender > ul > li[class~="on"]{
+    display: block;
+}
+
+#health {
+    display: flex;
+    padding: 0 12px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#health > li > img {
+    margin-bottom: 24px;
+}
+#health > li > span {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+}
+#food {
+    display: flex;
+    padding: 0 12px;
+    justify-content: space-between;
+}
+#food > div {
+    background-color: #E7C76E;
+    border-radius: 30px;
+    border: 1px solid #222222;
+    box-sizing: border-box;
+    padding: 40px 0;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    font-weight: 500;
+}
+#food > div > img {
+    margin-bottom: 20px;
+}
+#food > a {
+    width: 200px;
+    height: 250px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    border: 1px solid #222222;
+    text-align: center;
+    padding-top: 30px;
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
+}
+#food > a:nth-of-type(1){
+    background-image: url(../image/icon_and_vector/apple-jam.png);
+}
+#food > a:nth-of-type(2){
+    background-image: url(../image/icon_and_vector/pie.png);
+}
+#food > a:nth-of-type(3){
+    background-image: url(../image/icon_and_vector/fruit-salad.png);
+}
+#food > a:nth-of-type(4){
+    background-image: url(../image/icon_and_vector/candy-apple.png);
+}
+#food > a:nth-of-type(1):hover{
+    background-image: url(../image/appleJam_img.png);
+}
+#food > a:nth-of-type(2):hover{
+    background-image: url(../image/applePie_img.png);
+}
+#food > a:nth-of-type(3):hover{
+    background-image: url(../image/appleSalad_img.png);
+}
+#food > a:nth-of-type(4):hover{
+    background-image: url(../image/candyApple_img.png);
+}
+#content > div:last-of-type{
+    margin: 0 64px;
+    justify-content: space-between;
+}
+#product {
+    margin-left: 12px;
+}
+#product > h2 {
+    margin: 0 12px;
+    margin-bottom: 50px;
+}
+#product > img {
+    border-radius: 24px;
+    margin-bottom: 1rem;
+}
+#product > div > * {
+    background-color: #A4C639;
+    border-radius: 16px;
+}
+#product > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#product > div > p {
+    font-size: 1.5rem;
+    font-weight: 800;
+    width: 160px;
+    text-align: center;
+}
+#product > div > a {
+    padding: 0 10px;
+    font-weight: 800;
+    display: block;
+}
+#gallery > div:first-of-type{
+    margin: 0 12px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+#gallery > div > img {
+    border-radius: 36px;
+}
+#gallery > .flex {
+    gap:50px
+}
+#gallery > div > a {
+    font-weight: 700;
+}
+/* 푸터 */
+footer {
+    padding: 50px calc(50% - 600px);
+    background-color: #999;
+}
+footer > div{
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+}
+footer > div:first-of-type {
+    margin-bottom: 50px;
+}
+footer > div:first-of-type > div:last-child{
+    display: flex;
+    gap:10px
+}
+footer > div:last-of-type {
+    align-items: flex-end;
+}
+#address > dl{
+    display: flex;
+    font-size: 14px;
+}
+#address > dl > dt{
+    width: 100px;
+    font-weight: 700;
+}
+#blog {
+    background-image: url(../image/icon_and_vector/naver-blog-logo2.png);
+}
+#instagram {
+    background-image: url(../image/icon_and_vector/instagram.png);
+}
+#topArrow {
+    background-image: url(../image/icon_and_vector/applearrow.png);
+}

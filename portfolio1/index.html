@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>홈 | 뚝딱뚝딱 철공소</title>
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="css/commonStyle.css">
+        <link rel="stylesheet" href="css/redesignStyle.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="js/commonScript.js"></script>
+        <script src="js/redesighScript.js"></script>
+    </head>
+    <body>
+        <div id="overlay" class="hidden">
+            <div>
+                <div id="overlayMenu">
+                    <div>
+                        <p>소개</p>
+                        <ul>
+                            <li>
+                                <a href="index.html">철공소 소개</a>
+                                <a href="index.html">오시는 길</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>안내</p>
+                        <ul>
+                            <li>
+                                <a href="process.html">공정 안내</a>
+                                <a href="product.html">제품 안내</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="process.html">견적 신청</a>
+                    </div>
+                    <div>
+                        <p>커뮤니티</p>
+                        <ul>
+                            <li>
+                                <a href="process.html">의뢰 내역</a>
+                                <a href="process.html">문의 사항</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="address">
+                    <dl>
+                        <dt>전화번호</dt>
+                        <dd>1899-1680</dd>
+                    </dl>
+                    <dl>
+                        <dt>이메일</dt>
+                        <dd>cdy9491&#64;naver&#46;com</dd>
+                    </dl>
+                    <dl>
+                        <dt>예금주</dt>
+                        <dd>&#40;주&#41;한길산업</dd>
+                    </dl>
+                    <dl>
+                        <dt>계좌번호</dt>
+                        <dd>&#91;기업은행&#93; 464-061877-01-010</dd>
+                    </dl>
+                    <dl>
+                        <dt>주소</dt>
+                        <dd>경기도 시흥시 공단1대로 367</dd>
+                        <dd>&#40;주&#41; 한길산업</dd>
+                    </dl>
+                </div>
+                <button class="icon50px" id="close"><span>close overlay</span></button>
+            </div>
+        </div>
+        <div>
+            <header>
+                <h1>
+                    <a href="index.html">
+                        <img id="logo" src="image/icon/mosaWixzao.png" alt="SteelWork_logo">
+                        <span>뚝딱뚝딱 철공소</span>
+                    </a>
+                </h1>
+                <div>
+                    <!-- 일정너비 이하에서는 네비게이션바 숨김-->
+                    <div id="navigationBar">
+                        <div>
+                            <p>소개</p>
+                            <ul>
+                                <li><a href="index.html">철공소 소개</a></li>
+                                <li><a href="index.html">오시는 길</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>안내</p>
+                            <ul>
+                                <li><a href="process.html">공정 안내</a></li>
+                                <li><a href="product.html">제품 안내</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="process.html">견적 신청</a>
+                        </div>
+                        <div>
+                            <p>커뮤니티</p>
+                            <ul>
+                                <li><a href="process.html">의뢰 내역</a></li>
+                                <li><a href="process.html">문의 사항</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="icon50px" id="login"><span>connect to login</span></button>
+                        <button class="icon50px" id="menu"><span>call overlay</span></button>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <!--메인 화면-->
+                <div id="mainview">
+                    <div>
+                        <P>금속의 모던함</P>
+                        <p>견고함 그리고 완벽함</p>
+                    </div>
+                </div> 
+                <!--효과에 쓸 태그는 js로 추가해 발현할 것,
+                효과는 '.effect'및 하위 항목에서 구현, 아래는 구현용 더미,
+                구조는 좀더 생각해 볼것-->
+                <!--
+                    <div id="effect">
+                        <div>
+                            <div>upper sheet</div>
+                            <img>
+                            <div>under sheet</div>
+                        </div>
+                    </div>
+                -->
+                <!--컨텐츠 칸 -->
+                <section>
+                    <div id="process">
+                        <h2>철공소 안으로</h2>
+                        <div id="wrap">
+                            <div class="popup">
+                                <div id="cut" class="processbox">
+                                    <div>
+                                        <h3>공정 안내</h3>
+                                        <div>
+                                            <span>절단 Cutting</span>
+                                            <a href="process.html">더보기</a>
+                                        </div>
+                                        <img src="image/icon/steel-sheet.png" alt="steelSheet-icon">
+                                        <p>컷팅머신(샤링기)를 이용하여 철판을 사각,삼각,육각,원형 등 다양한 형태로 가공합니다.
+                                            <br> 기기 특성상 곡선은 힘들지만 직선과 원형작업은 가능합니다. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup">
+                                <div id="band" class="processbox">
+                                    <div>
+                                        <h3>공정 안내</h3>
+                                        <div>
+                                            <span>절곡 Banding</span>
+                                            <a href="process.html">더보기</a>
+                                        </div>
+                                        <img src="image/icon/bending.png" alt="bending-icon">
+                                        <p>절곡기를 이용하여 제품에 맞게 치수와 각도를 검토하여 ㄱ,ㄷ,ㄹ등 다양한 형태로 절곡할 수 있습니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup">
+                                <div id="drill" class="processbox">
+                                    <div>
+                                        <h3>공정 안내</h3>
+                                        <div>
+                                            <span>타공 Drilling</span>
+                                            <a href="process.html">더보기</a>
+                                        </div>
+                                        <img src="image/icon/milling-machine.png" alt="drilling-icon">
+                                        <p>철판이나 파이프 등 재료에 구멍을 뚫는 작업입니다. 
+                                            <br>용도에 따라 0.1mm 단위로 구멍을 뚫을 수 있으며 필요에 따라 나사산을 만들어주는 탭핑작업도 가능합니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup">
+                                <div id="weld" class="processbox">
+                                    <div>
+                                        <h3>공정 안내</h3>
+                                        <div>
+                                            <span>용접 Welding</span>
+                                            <a href="process.html">더보기</a>
+                                        </div>
+                                        <img src="image/icon/arc.png" alt="welding-icon">
+                                        <p>용접은 두 제품을 하나로 이어붙이는 작업으로 거의 모든 금속 완제품에 없어서는 안될 필수 공정중 하나입니다. 
+                                            <br>뚝딱뚝딱 철공소에서는 아크용접, CO2 용접, 스포트 용접, 아르곤용접을 주로 하고 있습니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidemenu">
+                        <div>
+                            <h2>제품 소개</h2>
+                            <a href="product.html">
+                                <span>더보기</span>
+                            </a>
+                        </div>
+                        <ul id="product">
+                            <li id="product1" class="popup">
+                                <span>파이프 연결 고정대</span>
+                            </li>
+                            <li id="product2" class="popup">
+                                <span>파이프 고정대</span>
+                            </li>
+                            <li id="product3" class="popup">
+                                <span>철제 프레임</span>
+                            </li>
+                            <li id="product4" class="popup">
+                                <span>LCD 거치대</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidemenu">
+                        <div>
+                            <h2>의뢰 내역</h2>
+                            <a href="process.html">
+                                <span>더보기</span>
+                            </a>
+                        </div>
+                        <div id="commission">
+                            <div class="popup">
+                                <img src="image/req1_tn.jpg" alt="keyboardDesk">
+                                <h4>책상 키보드 선반 제작</h4>
+                                <div>
+                                    <span>철공소장</span>
+                                    <span>2021.4.19</span>
+                                </div>
+                            </div>
+                            <div class="popup">
+                                <img src="image/req2_tn.jpg" alt="cookerRid">
+                                <h4>꼬치구이기 덮개</h4>
+                                <div>
+                                    <span>철공소장</span>
+                                    <span>2017.7.21</span>
+                                </div>
+                            </div>
+                            <div class="popup">
+                                <img src="image/req3_tn.jpg" alt="elevatorStructure">
+                                <h4>화물 엘리베이터 구조물</h4>
+                                <div>
+                                    <span>철공소장</span>
+                                    <span>2017.7.21</span>
+                                </div>
+                            </div>
+                            <div class="popup">
+                                <img src="image/req4_tn.jpg" alt="metalStand">
+                                <h4>철 받침대 제작</h4>
+                                <div>
+                                    <span>철공소장</span>
+                                    <span>2017.6.7</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer>
+            <div>
+                <div>
+                    <div>
+                        <dl>
+                            <dt>상호</dt>
+                            <dd>&#40;주&#41;한길산업</dd>
+                        </dl>
+                        <dl>
+                            <dt>대표자</dt>
+                            <dd>김한준</dd>
+                        </dl>
+                        <dl>
+                            <dt>전화번호</dt>
+                            <dd>1899-1680</dd>
+                        </dl>
+                    </div>
+                    <div>
+                        <dl>
+                            <dt>이메일</dt>
+                            <dd>cdy9491&#64;naver&#46;com</dd>
+                        </dl>
+                        <dl>
+                            <dt>사업자 번호</dt>
+                            <dd>883-81-01795</dd>
+                        </dl>
+                    </div>
+                </div>
+                <a id="topArrow" class="icon50px"><span>To The Top</span></a>
+            </div>
+            <div>
+                <p>Copyright &#169; HANGIL. All right reserved</p>
+                <div>
+                    <a href="process.html">개인정보 처리방침</a>
+                    <a href="process.html">이용약관</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
