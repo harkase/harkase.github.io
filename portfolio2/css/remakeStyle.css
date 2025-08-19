@@ -93,7 +93,7 @@ header > a > img {
 header > a > h1 {
     width: 2em;
     line-height: 1.2em;
-    -webkit-line-clamp: 3;
+    line-clamp: 3;
 }
 /* 기타 기능 클래스 */
 .icon50px {
@@ -181,6 +181,7 @@ header > a > h1 {
     text-align: center;
     padding: 50px;
     top:0;
+    font-weight: bold;
     font-size: 3.5rem;
     line-height: 1.1em;
     color: #D32F2F;
@@ -244,7 +245,9 @@ header > a > h1 {
     transform: translate(-50%,-50%);
     display: none;
 }
-.seasonApple[class~="on"]
+.seasonApple[class~="on"]{
+    display: block;
+}
 #calender > ul {
     position: relative;
     width: 100%;
