@@ -125,7 +125,7 @@ header > a > h1 {
     top:150px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 7rem;
+    font-size: 5rem;
     text-shadow: -3px 0 #f0f0f0, 0 3px #f0f0f0, 3px 0 #f0f0f0, 0 -3px #f0f0f0;
 }
 #mainlogo > a {
