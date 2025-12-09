@@ -64,7 +64,7 @@ p , li {
 }
 /* 모니터 공통 */
 .monitor {
-    padding-top: 100px;
+    padding-top: 10vh;
     background: url(../images/A_dark_and_gloomy_office_scene.jpg) no-repeat center;
     width: 100%;
     height: 100vh;
@@ -145,9 +145,10 @@ p , li {
     margin: 0 auto;
     background-color: #f0f4ff;
     color: #222;
-    border: 1px solid #000;
+    border: 1px solid #aaa;
     padding: 100px calc((100% - 1198px) / 2);
 }
+
 .wrap > div {
     padding: 0 12px;
 }
@@ -228,10 +229,10 @@ div:last-child > h3 {
 #slide5 > div > ul > li {
     position: relative;
 }
-.thumbnail > a , .portfolio > a{
+.thumbnail > a , .webpage > a{
     display: block;
 }
-.thumbnail > a::after , .portfolio > a::after {
+.thumbnail > a::after , .webpage > a::after {
     content:'';
     width: 24px;
     height: 24px;
@@ -303,6 +304,24 @@ footer > p{
     font-size: 14pt;
     font-weight: 400;
     line-height: 50pt;
+}
+
+@media (max-height: 900px) {
+    .wrap {
+        top: 30px;
+    }
+    #blackboard {
+        padding-top: 30px;
+    }
+    #blackboard > div::before{
+        top: 0px;
+    }
+}
+@media (max-height: 800px) {
+    .wrap {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }
 
 @keyframes blink {

@@ -37,6 +37,7 @@ $(function() {
     /* 스크롤이벤트 */
     const $html = $('html');
     const $width = $( window ).width();
+    const $height = $( window ).height();
     const $dummy = $('#psudoback');
 
     /* 스크롤 감지할 변수와 스크롤 애니메이션 */
